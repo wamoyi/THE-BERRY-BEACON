@@ -1,0 +1,12 @@
+h1{
+    color:red
+}
+h2{
+    color:blue
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #0cdb7a;
+}
