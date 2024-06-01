@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>THE BERRY BEACON BEEHIVE</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>THE BERRY BEACON BEEHIVE</h1>
+            <img src="beacon.jpg" alt="beehive image" width="80%" height="70%">
+            
+        </header>
+        <main>
+            <form method="post">
+                <h2>Fill in the form below to buy or sell coffee</h2>
+               
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required></br>
+                <label for="tel">Phone Number:</label>
+                <input type="tel" id="tel" name="tel" required ></br> 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required></br>
+                <label for="quantity">Quantity[KGS]:</label>
+                <input type="number" id="quantity" name="quantity" required min="20"></br>
+                <fieldset id="breed">
+                    <legend>Coffee Breed:</legend>
+                    <input type="radio" id="batian" name="batian" value="batian">
+                    <label for="batian">Batian</label><br>
+                    <input type="radio" id="28" name="28" value="28">
+                    <label for="28">SL 28</label><br>
+                    <input type="radio" id="34" name="34" value="34">
+                    <label for="34">SL 34</label><br>
+                    <input type="radio" id="k7" name="k7" value="k7">
+                    <label for="k7">K7</label><br>
+                    <input type="radio"id="ruiru" name="ruiru" value="ruiru">
+                    <label for="ruiru">Ruiru 11</label><br>
+                
+                </fieldset>
+                <fieldset >
+                    <legend>Location:</legend><br>
+                    <label for="county">County:</label>
+                    <input type="text" id="county" name="county" required><br>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Payment Method:
+                    </legend>
+                    <input type="radio" id="mpesa" name="mpesa" value="mpesa"> <br>
+                    <label for="mpesa">Mpesa</label><br>
+                    <input type="radio" id="cash" name="cash" value="cash"> <br>
+                    <label for="cash">Cash</label><br>
+                    <input type="radio" id="cheque" name="cheque" value="cheque"> <br>
+                    <label for="cheque">Cheque</label><br>
+
+                </fieldset>
+                <fieldset id="transaction_type">
+                    <legend>Transaction Type:</legend>
+                    <input type="radio" id="buying" name="transaction" value="buying" required>
+                    <label for="buying">Buying</label><br>
+                    <input type="radio" id="selling" name="transaction" value="selling" required>
+                    <label for="selling">Selling</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Delivery Method:
+                    </legend>
+                    <input type="radio" id="pick" name="pick" value="pick"> <br>
+                    <label for="pick">Pick Up</label><br>
+                    <input type="radio" id="courier" name="courier" value="courier"> <br>
+                    <label for="courier">Courier</label><br>
+                    <input type="radio" id="post" name="post" value="post"> <br>
+                    <label for="post">Post</label><br>
+                </fieldset>
+               
+                <input type="submit" value="Submit">
+
+
+
+
+            </form>
+        </main>
+        <footer></footer>
+    </body>
+</html>
