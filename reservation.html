@@ -8,124 +8,142 @@
 </head>
 <body>
     <div class="container">
-    <main>
-        
-<h1>RESERVATION</h1>
-<p>Thank you for choosing The Berry Beacon Restaurante! Please fill out the form below to make a reservation.</p>
-<form action="reservation.php" method="post">
-    
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-    <label for="phone">Phone Number:</label><br>
-    <input type="tel" id="phone" name="phone" required><br><br>
-    <label for="date">Date:</label><br>
-    <input type="date" id="date" name="date" required><br><br>
-    <label for="time">Time:</label><br>
-    <input type="time" id="time" name="time" required><br><br>
-    <label for="table">Table Preference:</label><br>
-    <select id="table" name="table" required>
-        <option value="1">Table for 1</option>
-        <option value="2">Table for 2</option>
-        <option value="3">Table for 3</option>
-        <option value="4">Table for 4</option>
-        <option value="5">Table for 5</option>
-        <option value="6">Table for 6</option>
-        <option value="7">Table for 7</option>
-        <option value="8">Table for 8</option>
-        <option value="9">Table for 9</option>
-        <option value="10">Table for 10</option>
-    </select><br><br>
-    <label for="occasion">Occasion:</label><br>
-    <select id="occasion" name="occasion" required>
-        <option value="birthday">Birthday</option>
-        <option value="anniversary">Anniversary</option>
-        <option value="business">Business</option>
-        <option value="date">Date</option>
-        <option value="family">Family</option>
-        <option value="friends">Friends</option>
-        <option value="other">Other</option>
-    </select><br><br>
-    <label for="occasion">Dietary Restrictions:</label><br>
-    <select id="diet" name="diet" required>
-        <option value="none">None</option>
-        <option value="vegetarian">Vegetarian</option>
-        <option value="vegan">Vegan</option>
-        <option value="gluten">Gluten-Free</option>
-        <option value="dairy">Dairy-Free</option>
-        <option value="other">Other</option>
-    </select><br><br>
-    <label for="occasion">Beverage Preference:</label><br>
-    <select id="beverage" name="beverage" required>
-        <option value="water">Water</option>
-        <option value="soda">Soda</option>
-        <option value="juice">Juice</option>
-        <option value="beer">Beer</option>
-        <option value="wine">Wine</option>
-        <option
-        value="cocktail">Cocktail</option>
-        <option value="other">Other</option>
-    </select><br><br>
-    <label for="occasion">Food Preference:</label><br>
-    <select id="food" name="food" required>
-        <option value="appetizer">Appetizer</option>
-        <option value="salad">Salad</option>
-        <option value="soup">Soup</option>
-        <option value="entree">Entree</option>
-        <option value="dessert">Dessert</option>
-        <option value="other">Other</option>
-    </select><br><br>
-    <label for="occasion">Dessert Preference:</label><br>
-    <select id="dessert" name="dessert" required>
-        <option value="cake">Cake</option>
-        <option value="pie">Pie</option>
-        <option value="icecream">Ice Cream</option>
-        <option value="cookies">Cookies</option>
-        <option value="other">Other</option>
-    </select><br><br>
-    <label for="occasion">Entree Preference:</label><br>
-    <select id="entree" name="entree" required>
-        <option value="beef">Beef</option>
-        <option value="chicken">Chicken</option>
-        <option value="fish">Fish</option>
-        <option value="pork">Pork</option>
-        <option value="vegetarian">Vegetarian</option>
-        <option value="other">Other</option>
-    </select><br><br>
-    <label for="occasion">Soup Preference:</label><br>
-    <select id="soup" name="soup" required>
-        <option value="chicken">Chicken</option>
-        <option value="tomato">Tomato</option>
-        <option value="vegetable">Vegetable</option>
-        <option value="mushroom">Mushroom</option>
-        <option value="other">Other</option>
-    </select><br><br>
-    <label for="occasion">Salad Preference:</label><br>
-    <select id="salad" name="salad" required>
-        <option value="garden">Garden</option>
-        <option value="caesar">Caesar</option>
-        <option value="fruit">Fruit</option>
-        <option value="pasta">Pasta</option>
-        <option value="other">Other</option>
-    </select><br><br>
-    <label for="occasion">Appetizer Preference:</label><br>
-    <select id="appetizer" name="appetizer" required>
-        <option value="wings">Wings</option>
-        <option value="nachos">Nachos</option>
-        <option value="shrimp">Shrimp</option>
-        <option value="calamari">Calamari</option>
-        <option value="other">Other</option>
-    </select><br><br>
-    <label for="special">Special Requests:</label><br>
-    <textarea id="special" name="special" rows="4" cols="50"></textarea><br><br>
-    <input type="submit" value="Submit">
-</form>
-    </main>
-    <footer>
-        <p><b><em>The Berry Beacon-where every cup tells a story</em></b></p>
-    </footer>
-    <a href="index.html">Back to Home</a>
-</div>
+        <main>
+            <h1>RESERVATION</h1>
+            <p>Thank you for choosing The Berry Beacon Restaurante! Please fill out the form below to make a reservation.</p>
+            <form action="reservation.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="table">Table Preference:</label>
+                <fieldset id="table">
+                    <input type="radio" value="1" name="table"> Table for 1<br>
+                    <input type="radio" value="2" name="table" checked>Table for 2<br>
+                    <input type="radio" value="4" name="table">Table for 4<br>
+                    <input type="radio" value="5" name="table"> Table for 5<br>
+                    <input type="radio" value="10" name="table"> Table for 10
+                </fieldset>
+                <label for="location">Table location:
+                    <fieldset id="location">
+                        <input type="radio" value="indoor" name="location">Indoor
+                        <input type="radio" value="outdoor" name="location">Outdoor
+                    </fieldset>
+                </label>
+
+                <label for="occasion">Occasion:
+                <select id="occasion" name="occasion" required>
+                    <option value="birthday">Birthday</option>
+                    <option value="anniversary">Anniversary</option>
+                    <option value="business" checked>Business</option>
+                    <option value="date">Date</option>
+                    <option value="family">Family</option>
+                    <option value="friends">Friends</option>
+                    <option value="other">Other</option>
+                </select>
+                </label>
+
+                <label for="diet">Dietary Restrictions:
+                <select id="diet" name="diet" required>
+                    <option value="none">None</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="gluten">Gluten-Free</option>
+                    <option value="dairy">Dairy-Free</option>
+                    <option value="other">Other</option>
+                </select>
+                </label>
+
+                <label for="beverage">Beverage Preference:</label>
+                <select id="beverage" name="beverage" required>
+                    <option value="water">Water</option>
+                    <option value="soda">Soda</option>
+                    <option value="juice">Juice</option>
+                    <option value="beer">Beer</option>
+                    <option value="wine">Wine</option>
+                    <option value="cocktail">Cocktail</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="food">Food Preference:</label>
+                <select id="food" name="food" required>
+                    <option value="appetizer">Appetizer</option>
+                    <option value="salad">Salad</option>
+                    <option value="soup">Soup</option>
+                    <option value="entree">Entree</option>
+                    <option value="dessert">Dessert</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="dessert">Dessert Preference:</label>
+                <select id="dessert" name="dessert" required>
+                    <option value="cake">Cake</option>
+                    <option value="pie">Pie</option>
+                    <option value="icecream">Ice Cream</option>
+                    <option value="cookies">Cookies</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="entree">Entree Preference:</label>
+                <select id="entree" name="entree" required>
+                    <option value="beef">Beef</option>
+                    <option value="chicken">Chicken</option>
+                    <option value="fish">Fish</option>
+                    <option value="pork">Pork</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="soup">Soup Preference:</label>
+                <select id="soup" name="soup" required>
+                    <option value="chicken">Chicken</option>
+                    <option value="tomato">Tomato</option>
+                    <option value="vegetable">Vegetable</option>
+                    <option value="mushroom">Mushroom</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="salad">Salad Preference:</label>
+                <select id="salad" name="salad" required>
+                    <option value="garden">Garden</option>
+                    <option value="caesar">Caesar</option>
+                    <option value="fruit">Fruit</option>
+                    <option value="pasta">Pasta</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="appetizer">Appetizer Preference:</label>
+                <select id="appetizer" name="appetizer" required>
+                    <option value="wings">Wings</option>
+                    <option value="nachos">Nachos</option>
+                    <option value="shrimp">Shrimp</option>
+                    <option value="calamari">Calamari</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="special">Special Requests:</label>
+                <textarea id="special" name="special" rows="4" cols="50"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+
+        <footer>
+            <p><b><em>The Berry Beacon - where every cup tells a story</em></b></p>
+        </footer>
+
+        <a href="index.html">Back to Home</a>
+    </div>
 </body>
 </html>
